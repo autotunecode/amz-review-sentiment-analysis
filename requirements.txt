@@ -6,3 +6,4 @@ pandas
 tensorflow
 torch
 fugashi
+ipadic
