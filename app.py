@@ -6,9 +6,6 @@ from transformers import pipeline
 from transformers import BertTokenizer
 import time
 import base64
-# import os
-# os.system('pip install tensorflow>=2.0.0')
-# os.system('pip install torch>=2.0.0')
 
 
 headers = {
