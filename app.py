@@ -3,11 +3,12 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import streamlit as st
 from transformers import pipeline
+from transformers import BertTokenizer
 import time
 import base64
-import os
-os.system('pip install tensorflow>=2.0.0')
-os.system('pip install torch>=2.0.0')
+# import os
+# os.system('pip install tensorflow>=2.0.0')
+# os.system('pip install torch>=2.0.0')
 
 
 headers = {
@@ -31,7 +32,7 @@ def get_reviews(url, ASIN):
         review_body = ' '.join(review_body.split())
         review_body = ''.join(c if c.isalnum() or c.isspace() else '。' for c in review_body)
         # レビューの長さを512に制限
-        # review_body = review_body[:512]
+        review_body = review_body[:512]
         # 星評価を取得
         star_rating = review.find('span', {'class': 'a-icon-alt'}).text
         star_rating = star_rating[-3:]
