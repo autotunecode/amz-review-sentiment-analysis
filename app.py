@@ -5,6 +5,10 @@ import streamlit as st
 from transformers import pipeline
 import time
 import base64
+import os
+os.system('pip install tensorflow>=2.0.0')
+os.system('pip install torch>=2.0.0')
+
 
 headers = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
