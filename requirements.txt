@@ -1,5 +1,5 @@
-streamlit
-requests
-beautifulsoup4
-transformers
-pandas
+streamlit==1.20.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+transformers==4.36.2
+pandas==1.5.3

@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import streamlit as st
 from transformers import pipeline
-from transformers import BertTokenizer
 import time
 import base64
 
